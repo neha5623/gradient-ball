@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Sky Gradient</title>
+    <style>
+    
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.night-sky {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000428, #004e92); /* Gradient colors */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Adding some stars */
+.night-sky::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 100px 100px white, 150px 200px white, 200px 150px white, 250px 300px white, 300px 200px white;
+}
+</style>
+</head>
+<body>
+    <div class="night-sky"></div>
+</body>
+</html>
